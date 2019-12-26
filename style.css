@@ -61,10 +61,6 @@ h1,h2, p, h3{
     text-align: center;
 }
 
-h3{
-    font-style: italic;
-}
-
 /* Navigation section style */
 
 .main-nav{
@@ -110,7 +106,7 @@ h3{
 #about{
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(45deg,rgba(2,33,64,0.8) 55%,rgba(45,95,93,0.8)), url(bg.jpg);
+    background-image: linear-gradient(45deg,rgba(9, 145, 81, 0.8) 20%,rgba(18, 133, 129, 0.8)), url(bg.jpg);
 }
 
 #about h1{
@@ -118,10 +114,54 @@ h3{
     font-size: 6rem;
 }
 
+#about h1::after{
+    animation-name: changeName;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    content: " ";
+    background-color: #56aaf8;
+}
+
+@keyframes changeName{  
+    0%{
+        
+        content: " Anhmmo";   
+    }
+    33%{
+        content: " Developer";
+    }
+    66%{
+        content: " Designer";
+    }
+    100%{
+        content: " Content maker";
+    } 
+}
+
 #about h3{
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     letter-spacing: 1.2px;
-    color: var(--color-yellow);
+    color: var(--color-white);
+    width: 23rem;
+    margin: 1rem auto 0 auto;
+    animation-name: changeColor;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changeColor{  
+    0%{
+        background-color: #fe9801;
+    }
+    33%{
+        background-color: var(--color-red);
+    }
+    66%{
+        background-color: #ccda46;
+    }
+    100%{
+        background-color: var(--color-violet);
+    } 
 }
 
 /* Project section style */
@@ -314,6 +354,11 @@ footer span{
 }
 
 @media(max-width: 500px){
+
+    #about h3{
+        width: 26rem;
+    }
+
     .social-list a{
         width: 100vw;
         margin: 0 0 1.5rem 0;
