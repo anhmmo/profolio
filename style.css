@@ -44,8 +44,7 @@ html{
   }
 
 body{
-    outline: 0;
-    border: 0;
+
     font-size: 1.8rem;
     line-height: 1.4;
     font-weight: 400;
@@ -125,6 +124,11 @@ h3{
 
 /* Project section style */
 
+
+#project{
+    margin: 0 2rem 5rem 2rem;
+}
+
 #project h2{
     margin: 0 auto;
     max-width: 640px;
@@ -148,7 +152,7 @@ h3{
 }
 
 img{
-    height: calc(100% - 6.5rem);
+    height: calc(100% - 8.6rem);
     width: 100%;
     object-fit: cover;
 }
@@ -174,3 +178,90 @@ code{
         grid-template-columns: 1fr;
     }
 }
+
+.button{
+    outline: 0;
+    width: 13rem;
+    border: 0;
+    padding: 1rem;
+    color: white;
+    background-color: #303841;
+    cursor: pointer;
+    font-size: 2rem;
+    margin: 0 auto;
+    
+}
+
+span{
+    margin-left: 0.5rem;
+}
+
+.button:hover{
+    background-color: tomato;
+    transition: background-color 500ms ease-out;
+}
+.button:hover span{
+    margin-left: 1.2rem;
+    transition: margin-left 500ms ease-in;
+}
+
+
+
+/* Contact section style */
+
+#contact{
+    width: 100vw;
+    height: 100vh;
+    background-color: #303841;
+}
+
+#contact h1{
+    font-family: 'Rale',sans-serif;
+    font-weight: 700;
+    padding-top: 23rem;
+    font-size: 6rem;
+    letter-spacing: 1.1px;
+}
+
+.social-list{
+    margin-top: 4.2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-list a{
+    font-size: 2.5rem;
+    margin: 3rem;
+}
+
+.social-list a i{
+    margin-right: 4px;
+}
+
+.social-list a:hover{
+    transform: translateY(-1rem);
+    transition: transform 500ms ease-out;
+}
+
+@media(max-width: 850px){
+    .social-list{
+        flex-wrap: wrap;
+    }
+
+    .social-list a{
+        margin: 3rem 2rem 0.5rem 2rem;
+    }
+}
+
+@media(max-width: 500px){
+    .social-list a{
+        width: 100vw;
+        margin: 0 0 2rem 0;
+        text-align: center;
+    }
+
+}
+
+
+
+
