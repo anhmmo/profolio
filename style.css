@@ -73,6 +73,7 @@ h3{
     top: 0;
     min-height: 9vh;
     background-color: var(--color-orange);
+    z-index: 1;
 }
 
 .main-nav ul{
@@ -109,7 +110,7 @@ h3{
 #about{
     width: 100vw;
     height: 100vh;
-    background-color: var(--color-violet);
+    background-image: linear-gradient(45deg,rgba(2,33,64,0.8) 55%,rgba(45,95,93,0.8)), url(bg.jpg);
 }
 
 #about h1{
@@ -219,9 +220,13 @@ span{
 #contact h1{
     font-family: 'Rale',sans-serif;
     font-weight: 700;
-    padding-top: 22rem;
+    padding-top: 18rem;
     font-size: 6rem;
     letter-spacing: 1.1px;
+}
+
+#contact h3{
+    font-size: 1.8rem;
 }
 
 .social-list{
@@ -260,6 +265,7 @@ footer p{
     width: 70%;
     float: left;
     margin: 0 20rem 0 2rem;
+    text-align: left;
 }
 
 footer span{
@@ -274,7 +280,7 @@ footer span{
     }
 
     #contact h1{
-        padding-top: 19rem;
+        padding-top: 15rem;
     }
 
     .social-list a{
@@ -300,6 +306,13 @@ footer span{
     }
 }
 
+@media(max-width: 650px){
+    
+    #contact h1{
+        padding-top: 13rem;
+    }
+}
+
 @media(max-width: 500px){
     .social-list a{
         width: 100vw;
@@ -310,6 +323,10 @@ footer span{
     #contact h1{
         font-size: 4rem;
         padding-top: 10rem;
+    }
+
+    footer{
+        height: 15vh;
     }
 
 }
