@@ -68,7 +68,8 @@ h1,h2, p, h3{
     position: fixed;
     top: 0;
     min-height: 9vh;
-    background-color: var(--color-orange);
+    background-color: #11999e;
+    border-bottom: 1.5px solid white;
     z-index: 1;
 }
 
