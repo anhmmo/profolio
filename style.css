@@ -20,6 +20,7 @@ html{
     font-size: 62.5%;
     color: var(--color-white);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /* 1200px / 16px = 75em */
@@ -211,14 +212,14 @@ span{
 
 #contact{
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     background-color: #303841;
 }
 
 #contact h1{
     font-family: 'Rale',sans-serif;
     font-weight: 700;
-    padding-top: 23rem;
+    padding-top: 22rem;
     font-size: 6rem;
     letter-spacing: 1.1px;
 }
@@ -243,21 +244,70 @@ span{
     transition: transform 500ms ease-out;
 }
 
+
+
+
+footer{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+footer p{
+    width: 70%;
+    float: left;
+    margin: 0 20rem 0 2rem;
+}
+
+footer span{
+    width: 30%;
+    float: right;
+}
+
+
 @media(max-width: 850px){
     .social-list{
         flex-wrap: wrap;
     }
 
+    #contact h1{
+        padding-top: 19rem;
+    }
+
     .social-list a{
         margin: 3rem 2rem 0.5rem 2rem;
+    }
+
+    footer{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    footer p{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        float: none;
+    }
+    
+    footer span{
+        width: 100%;
+        text-align: center;
+        float: none;
     }
 }
 
 @media(max-width: 500px){
     .social-list a{
         width: 100vw;
-        margin: 0 0 2rem 0;
+        margin: 0 0 1.5rem 0;
         text-align: center;
+    }
+
+    #contact h1{
+        font-size: 4rem;
+        padding-top: 10rem;
     }
 
 }
